@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{title}}</title>
+<link rel="stylesheet" href="{{url_for('static',filename='home.css')}}">
+    </head>
+    <body class="background-image">
+        {% block content %}{% endblock %}
+        <table>        
+            <tr>
+                <td class="maplelive">   
+                    <span class="headerTitle ">
+                        <a href="{{url_for('home')}}" class="home1">楓鈴の都</a>
+                    </span>
+                    <span>
+                        <a href="{{url_for('home')}}">首頁</a>
+                        <a href="{{url_for('itd')}}">簡介</a>
+                        <a href="{{url_for('mc')}}">server</a> 
+                    </span>
+                    <span class="content">
+                        <h1 class="a">楓鈴の都　官方網站</h1>
+                        <p>目前官網只開放server</p>
+                        <p>minecraft server 有包括一些伺服器資訊</p>
+                    </span>
+                </td>
+        </table>
+    </body>
+</html>
